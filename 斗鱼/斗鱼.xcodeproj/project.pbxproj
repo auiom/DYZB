@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6595C5971E1215F40067051E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C5961E1215F40067051E /* AppDelegate.swift */; };
-		6595C5991E1215F40067051E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C5981E1215F40067051E /* ViewController.swift */; };
 		6595C59C1E1215F40067051E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6595C59A1E1215F40067051E /* Main.storyboard */; };
 		6595C59E1E1215F40067051E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595C59D1E1215F40067051E /* Assets.xcassets */; };
 		6595C5A11E1215F40067051E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6595C59F1E1215F40067051E /* LaunchScreen.storyboard */; };
 		6595C5AC1E1215F40067051E /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C5AB1E1215F40067051E /* __Tests.swift */; };
 		6595C5B71E1215F40067051E /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C5B61E1215F40067051E /* __UITests.swift */; };
+		6595C5C51E1218300067051E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595C5C41E1218300067051E /* Images.xcassets */; };
+		6595C5C71E12190D0067051E /* Default2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 6595C5C61E12190D0067051E /* Default2048.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		6595C5931E1215F40067051E /* 斗鱼.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6595C5961E1215F40067051E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6595C5981E1215F40067051E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6595C59B1E1215F40067051E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6595C59D1E1215F40067051E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6595C5A01E1215F40067051E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		6595C5B21E1215F40067051E /* 斗鱼UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "斗鱼UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6595C5B61E1215F40067051E /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
 		6595C5B81E1215F40067051E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6595C5C41E1218300067051E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6595C5C61E12190D0067051E /* Default2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default2048.png; path = "斗鱼/Assets.xcassets/LaunchImage.launchimage/Default2048.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		6595C58A1E1215F40067051E = {
 			isa = PBXGroup;
 			children = (
+				6595C5C61E12190D0067051E /* Default2048.png */,
 				6595C5951E1215F40067051E /* 斗鱼 */,
 				6595C5AA1E1215F40067051E /* 斗鱼Tests */,
 				6595C5B51E1215F40067051E /* 斗鱼UITests */,
@@ -97,12 +100,13 @@
 		6595C5951E1215F40067051E /* 斗鱼 */ = {
 			isa = PBXGroup;
 			children = (
+				6595C5C81E121EEE0067051E /* Clasess */,
 				6595C5961E1215F40067051E /* AppDelegate.swift */,
-				6595C5981E1215F40067051E /* ViewController.swift */,
 				6595C59A1E1215F40067051E /* Main.storyboard */,
 				6595C59D1E1215F40067051E /* Assets.xcassets */,
 				6595C59F1E1215F40067051E /* LaunchScreen.storyboard */,
 				6595C5A21E1215F40067051E /* Info.plist */,
+				6595C5C41E1218300067051E /* Images.xcassets */,
 			);
 			path = "斗鱼";
 			sourceTree = "<group>";
@@ -123,6 +127,61 @@
 				6595C5B81E1215F40067051E /* Info.plist */,
 			);
 			path = "斗鱼UITests";
+			sourceTree = "<group>";
+		};
+		6595C5C81E121EEE0067051E /* Clasess */ = {
+			isa = PBXGroup;
+			children = (
+				6595C5CC1E121EEE0067051E /* Main */,
+				6595C5CA1E121EEE0067051E /* Home */,
+				6595C5C91E121EEE0067051E /* Follow */,
+				6595C5CB1E121EEE0067051E /* Live */,
+				6595C5CD1E121EEE0067051E /* Profile */,
+				6595C5CE1E121EEE0067051E /* Tools */,
+			);
+			path = Clasess;
+			sourceTree = "<group>";
+		};
+		6595C5C91E121EEE0067051E /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		6595C5CA1E121EEE0067051E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6595C5CB1E121EEE0067051E /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		6595C5CC1E121EEE0067051E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6595C5CD1E121EEE0067051E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6595C5CE1E121EEE0067051E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +252,7 @@
 				TargetAttributes = {
 					6595C5921E1215F40067051E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = G8TAZSR2G4;
+						DevelopmentTeam = WKZ94UCGMC;
 						ProvisioningStyle = Automatic;
 					};
 					6595C5A61E1215F40067051E = {
@@ -236,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6595C5A11E1215F40067051E /* LaunchScreen.storyboard in Resources */,
+				6595C5C71E12190D0067051E /* Default2048.png in Resources */,
+				6595C5C51E1218300067051E /* Images.xcassets in Resources */,
 				6595C59E1E1215F40067051E /* Assets.xcassets in Resources */,
 				6595C59C1E1215F40067051E /* Main.storyboard in Resources */,
 			);
@@ -262,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6595C5991E1215F40067051E /* ViewController.swift in Sources */,
 				6595C5971E1215F40067051E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,8 +473,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G8TAZSR2G4;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = WKZ94UCGMC;
 				INFOPLIST_FILE = "斗鱼/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,8 +488,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G8TAZSR2G4;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = WKZ94UCGMC;
 				INFOPLIST_FILE = "斗鱼/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +576,7 @@
 				6595C5BD1E1215F40067051E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6595C5BE1E1215F40067051E /* Build configuration list for PBXNativeTarget "斗鱼Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +585,7 @@
 				6595C5C01E1215F40067051E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6595C5C11E1215F40067051E /* Build configuration list for PBXNativeTarget "斗鱼UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +594,7 @@
 				6595C5C31E1215F40067051E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
